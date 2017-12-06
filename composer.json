@@ -1,0 +1,48 @@
+{
+  "config": {
+    "sort-packages": true
+  },
+  "name": "pe/component-cache",
+  "description": "Cache component, provides PSR-6 cache item pool and PSR-16 based cache drivers",
+  "keywords": ["psr-6", "psr-16", "cache"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Pavlenko Eugeniy",
+      "email": "pavlenko.obs@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.5",
+    "psr/cache": "^1.0",
+    "psr/event-manager-implementation": "^1.0",
+    "psr/simple-cache": "^1.0"
+  },
+  "require-dev": {
+    "pe/component-event-manager": "^1.0",
+    "phpunit/phpunit": "~5.0",
+    "symfony/var-dumper": "^3.3"
+  },
+  "provide": {
+    "psr/cache-implementation": "1.0.0",
+    "psr/simple-cache-implementation": "1.0.0"
+  },
+  "suggest": {
+    "pe/component-event-manager": "^1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "PE\\Component\\Cache\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "PETest\\Component\\Cache\\": "tests/"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0-dev"
+    }
+  }
+}
